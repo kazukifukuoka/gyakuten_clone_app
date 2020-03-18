@@ -48,7 +48,7 @@
           <%= link_to "ライティング講座", "#", class: 'nav-link'%>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">LINE＠</a>
+          <%= link_to "LINE@", "#", class: 'nav-link'%>
         </li>
         <% if user_signed_in? %>
         <li class="nav-item">
@@ -57,6 +57,9 @@
         <% else%>
         <li class="nav-item">
           <%= link_to "ログイン", new_user_session_path, class: 'post nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "新規登録", new_user_registration_path, class: 'post nav-link' %>
         </li>
         <% end %>
       </ul>
